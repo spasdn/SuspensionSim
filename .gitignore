@@ -1,0 +1,11 @@
+build/
+build-*/
+out/
+output/
+.vs/
+.vscode/
+suspsim_layout.ini
+imgui.ini
+CMakeSettings.json
+# Obsidian: estado de la interfaz (sí se versiona la configuración)
+docs/.obsidian/workspace*.json

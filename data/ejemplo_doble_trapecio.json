@@ -1,0 +1,50 @@
+{
+  // Ejemplo de suspensión delantera izquierda de doble trapecio (turismo genérico).
+  // Coordenadas ISO 8855 en mm: X adelante, Y izquierda, Z arriba. Suelo en Z = 0.
+  // Se admiten comentarios // en este archivo.
+  "name": "Ejemplo doble trapecio",
+  "units": "mm",
+  "axle": "front",
+  "side": "left",
+
+  "hardpoints": {
+    "lca_front":        [ 150.0, 250.0, 120.0],
+    "lca_rear":         [-200.0, 260.0, 125.0],
+    "uca_front":        [ 120.0, 330.0, 390.0],
+    "uca_rear":         [-160.0, 340.0, 395.0],
+    "tie_rod_inner":    [ 120.0, 270.0, 190.0],
+
+    "lower_ball_joint": [   5.0, 560.0, 140.0],
+    "upper_ball_joint": [ -15.0, 520.0, 450.0],
+    "tie_rod_outer":    [ 115.0, 555.0, 200.0],
+    "wheel_center":     [   0.0, 630.0, 300.0],
+    "spindle_point":    [   0.0, 730.0, 301.75]
+  },
+
+  "damper": {
+    "chassis":     [-30.0, 420.0, 650.0],
+    "arm":         [-20.0, 480.0, 150.0],
+    "attached_to": "lower_arm"
+  },
+
+  "tire":    { "radius": 300.0, "width": 205.0 },
+
+  "vehicle": {
+    "wheelbase": 2600.0,
+    "cg_height": 500.0,
+    "mass": 1200.0,
+    "front_brake_bias": 0.65,
+    "front_drive_fraction": 1.0
+  },
+
+  "boundary": {
+    "travel_min": -60.0,
+    "travel_max":  60.0,
+    "steps": 25,
+    "rack": 0.0,
+    "rack_min": -30.0,
+    "rack_max":  30.0
+  },
+
+  "chassis_mesh": "chasis_simple.obj"
+}
